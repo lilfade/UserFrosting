@@ -96,7 +96,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 	</div>
 	</div>
 	<script src="../js/widget-pages.js"></script>
-	<script src="../js/widget-permits.js"></script>	    
+	<script src="../js/widget-permits.js"></script>
 	<script>
         $(document).ready(function() {          
 

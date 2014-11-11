@@ -88,7 +88,7 @@ echo "<script>selected_user_id = $selected_user_id;</script>";
 
 </div><!-- /#wrapper -->
 
-    <script src="../js/widget-users.js"></script>    
+    <script src="../js/widget-users.js"></script>
     <script>
 		$(document).ready(function() {
 			userDisplay('widget-user-info', selected_user_id);
