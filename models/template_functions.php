@@ -142,5 +142,4 @@ function replaceDefaultHook($str)
 	global $default_hooks,$default_replace;	
 	return (str_replace($default_hooks,$default_replace,$str));
 }
-
 ?>

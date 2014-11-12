@@ -1,5 +1,5 @@
 
-# UserFrosting 0.2.2
+# UserFrosting 0.2.3
 ## http://www.userfrosting.com
 
 ### By Alex Weissman
@@ -86,14 +86,12 @@ Installation
 
 UserFrosting comes with an easy-to-use installer.  Simply download the code to a directory on your server, and navigate to the <code>/install</code> subdirectory.  UserFrosting will guide you through setting up the database, configuring settings, and creating the master account.
 
-Change Log - v0.2.2 
+Change Log - v0.2.3 
 -------------------
 
-- Implemented upgrade system, will pull new version list from github and automatically grab update files as well.
-- Moved file list from config.php to the database to be easier to add and remove file paths
-- Added version to the configuration table to aid in the upgrading of Userfrosting
-- Added dev_env to config.php as well as new setting to db-setting.php when set to true UF will no longer check for the install or upgrade directory (good for development defaults to FALSE)
-- Removal of models/captcha.php and replace with base64 captcha function.
+- Implemented some file reorganization, moved /css and /js to /public, moved page and mail templates as well as language files to /templates
+- Started adding social login feature to the application to enable login via configured social services (default is facebook, google, twitter) additional services are available to be configured
+
 
 [Older changes](CHANGELOG.md)   
 
