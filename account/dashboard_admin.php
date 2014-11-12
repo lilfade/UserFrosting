@@ -351,9 +351,9 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
     </div><!-- /#wrapper -->
     
-    <script src="../js/raphael/2.1.0/raphael-min.js"></script>
-    <script src="../js/morris/morris-0.4.3.js"></script>
-    <script src="../js/morris/chart-data-morris.js"></script>
+    <script src="../public/js/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../public/js/morris/morris-0.4.3.js"></script>
+    <script src="../public/js/morris/chart-data-morris.js"></script>
     <script>
         $(document).ready(function() {          
           alertWidget('display-alerts');

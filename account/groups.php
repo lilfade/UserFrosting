@@ -69,7 +69,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 		</div>
       </div>
 	</div>
-	<script src="../js/widget-groups.js"></script>
+	<script src="../public/js/widget-groups.js"></script>
 	<script>
         $(document).ready(function() {
 		  alertWidget('display-alerts');

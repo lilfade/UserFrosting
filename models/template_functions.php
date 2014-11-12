@@ -109,7 +109,7 @@ function renderMenu($highlighted_item_class){
 
 // TODO: clear unspecified placeholders
 function renderTemplate($template_file, $hooks = array()){    
-	$contents = file_get_contents(SITE_ROOT . "models/page-templates/" . $template_file);
+	$contents = file_get_contents(SITE_ROOT . "templates/page-templates/" . $template_file);
     
     //Check to see we can access the file / it has some contents
     if(!$contents || empty($contents)) {

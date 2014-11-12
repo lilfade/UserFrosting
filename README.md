@@ -115,6 +115,7 @@ The back end account management system is derived from [UserCake 2.0.2](http://u
 *  [DateJS](http://www.datejs.com)
 *  [Bootstrap Switch](http://bootstrap-switch.org) 
 *  [Bootsole PHP templating](https://github.com/alexweissman/bootsole)
+*  [Zocial CSS social buttons] (https://github.com/samcollins/css-social-buttons)
 
 All components are copyright of their respective creators.
 

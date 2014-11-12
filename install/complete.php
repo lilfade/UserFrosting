@@ -44,20 +44,20 @@ require_once("config.php");
 
     <title>Welcome to UserFrosting!</title>
 
-	<link rel="icon" type="image/x-icon" href="../css/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../public/css/favicon.ico" />
 	
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../public/css/jumbotron-narrow.css" rel="stylesheet">
 	
-	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../public/css/font-awesome.min.css">
 	 
     <!-- JavaScript -->
-    <script src="../js/jquery-1.10.2.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
-	<script src="../js/userfrosting.js"></script>
+    <script src="../public/js/jquery-1.10.2.min.js"></script>
+	<script src="../public/js/bootstrap.js"></script>
+	<script src="../public/js/userfrosting.js"></script>
 
   </head>
 

@@ -177,7 +177,7 @@ function prettyPrint( $json )
 //Retrieve a list of all .php files in models/languages
 function getLanguageFiles()
 {
-	$directory = "../models/languages/";
+	$directory = "../templates/languages/";
 	$languages = glob($directory . "*.php");
 	//print each file name
 	return $languages;

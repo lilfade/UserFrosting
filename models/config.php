@@ -110,10 +110,10 @@ defined("LOCAL_ROOT")
 	or define ("LOCAL_ROOT", realpath(dirname(__FILE__)."/.."));
 	
 defined("MENU_TEMPLATES")
-    or define("MENU_TEMPLATES", dirname(__FILE__) . "/menu-templates/");
+    or define("MENU_TEMPLATES", dirname(dirname(__FILE__)) . "/templates/menu-templates/");
 
 defined("MAIL_TEMPLATES")
-	or define("MAIL_TEMPLATES", dirname(__FILE__) . "/mail-templates/");
+	or define("MAIL_TEMPLATES", dirname(dirname(__FILE__)) . "/templates/mail-templates/");
 
 // Include paths for files containing secure functions
 $files_secure_functions = array(
@@ -147,10 +147,10 @@ $default_replace = array($websiteName,SITE_ROOT,$emailDate);
 
 // The dirname(__FILE__) . "/..." construct tells PHP to look for the include file in the same directory as this (the config) file
 if (!file_exists($language)) {
-	$language = dirname(__FILE__) . "/languages/en.php";
+	$language = dirname(dirname(__FILE__)) . "/templates/languages/en.php";
 }
 
-if(!isset($language)) $language = dirname(__FILE__) . "/languages/en.php";
+if(!isset($language)) $language = dirname(dirname(__FILE__)) . "/templates/languages/en.php";
 
 function getAbsoluteDocumentPath($localPath){
 	return SITE_ROOT . getRelativeDocumentPath($localPath);
