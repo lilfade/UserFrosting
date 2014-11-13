@@ -1,5 +1,6 @@
 
-# UserFrosting 0.2.3
+# UserFrosting 0.2.3-dev
+# See changlog below
 ## http://www.userfrosting.com
 
 ### By Alex Weissman
@@ -91,6 +92,9 @@ Change Log - v0.2.3
 
 - Implemented some file reorganization, moved /css and /js to /public, moved page and mail templates as well as language files to /templates
 - Started adding social login feature to the application to enable login via configured social services (default is facebook, google, twitter) additional services are available to be configured
+- Fixed the 404.php page as well as added a redirect 404.php in account/ to redirect to 404.php in the root folder.
+- Modified the header-loggedout.php to work with the 404.php page to show one item to logged in users otherwise the usual menu shows
+- Updated the installer to add the new account/info.php, this shows general information about the applications paths ect.
 
 
 [Older changes](CHANGELOG.md)   
