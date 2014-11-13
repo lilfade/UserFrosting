@@ -214,10 +214,12 @@ function lang($key,$markers = NULL)
 	}
 }
 
+// Non-working function atm
 function getCurrentLanguage($language){
-    $ex_l = explode('/', $language);
+    $p = $_SERVER['PHP_SELF'];
+    $ex_l = $language;//explode('/', $language);
     $ex_l_2 = explode('.', $ex_l[2]);
-    return $ex_l_2[0];
+    return $p;
 }
 
 /*********************************

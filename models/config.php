@@ -29,6 +29,10 @@ THE SOFTWARE.
 
 */
 
+// Development Error code !! Not for production servers remove before commits
+require( 'php_error.php' );
+\php_error\reportErrors();
+
 // Used to force backend scripts to log errors rather than print them as output
 function logAllErrors($errno, $errstr, $errfile, $errline, array $errcontext) {
 	ini_set("log_errors", 1);
