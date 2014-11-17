@@ -1,6 +1,5 @@
 
-# UserFrosting 0.2.3-dev
-# See changlog below
+# UserFrosting 0.2.2
 ## http://www.userfrosting.com
 
 ### By Alex Weissman
@@ -87,15 +86,14 @@ Installation
 
 UserFrosting comes with an easy-to-use installer.  Simply download the code to a directory on your server, and navigate to the <code>/install</code> subdirectory.  UserFrosting will guide you through setting up the database, configuring settings, and creating the master account.
 
-Change Log - v0.2.3 
+Change Log - v0.2.2 
 -------------------
 
-- Implemented some file reorganization, moved /css and /js to /public, moved page and mail templates as well as language files to /templates
-- Started adding social login feature to the application to enable login via configured social services (default is facebook, google, twitter) additional services are available to be configured
-- Fixed the 404.php page as well as added a redirect 404.php in account/ to redirect to 404.php in the root folder.
-- Modified the header-loggedout.php to work with the 404.php page to show one item to logged in users otherwise the usual menu shows
-- Updated the installer to add the new account/info.php, this shows general information about the applications paths ect.
-
+- Implemented upgrade system, will pull new version list from github and automatically grab update files as well.
+- Moved file list from config.php to the database to be easier to add and remove file paths
+- Added version to the configuration table to aid in the upgrading of Userfrosting
+- Added dev_env to config.php as well as new setting to db-setting.php when set to true UF will no longer check for the install or upgrade directory (good for development defaults to FALSE)
+- Removal of models/captcha.php and replace with base64 captcha function.
 
 [Older changes](CHANGELOG.md)   
 
@@ -117,7 +115,6 @@ The back end account management system is derived from [UserCake 2.0.2](http://u
 *  [DateJS](http://www.datejs.com)
 *  [Bootstrap Switch](http://bootstrap-switch.org) 
 *  [Bootsole PHP templating](https://github.com/alexweissman/bootsole)
-*  [Zocial CSS social buttons] (https://github.com/samcollins/css-social-buttons)
 
 All components are copyright of their respective creators.
 

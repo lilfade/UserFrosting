@@ -29,10 +29,6 @@ THE SOFTWARE.
 
 */
 
-// Development Error code !! Not for production servers remove before commits
-require( 'php_error.php' );
-\php_error\reportErrors();
-
 // Used to force backend scripts to log errors rather than print them as output
 function logAllErrors($errno, $errstr, $errfile, $errline, array $errcontext) {
 	ini_set("log_errors", 1);
@@ -44,7 +40,7 @@ function logAllErrors($errno, $errstr, $errfile, $errline, array $errcontext) {
 
 // This will stop the installer / upgrader from running as it normally would and should always be set to false
 // Options TRUE | FALSE bool
-$dev_env = TRUE;
+$dev_env = FALSE;
 
 require_once("db-settings.php"); //Require DB connection
 require_once("funcs.php");
@@ -114,10 +110,10 @@ defined("LOCAL_ROOT")
 	or define ("LOCAL_ROOT", realpath(dirname(__FILE__)."/.."));
 	
 defined("MENU_TEMPLATES")
-    or define("MENU_TEMPLATES", dirname(dirname(__FILE__)) . "/templates/menu-templates/");
+    or define("MENU_TEMPLATES", dirname(__FILE__) . "/menu-templates/");
 
 defined("MAIL_TEMPLATES")
-	or define("MAIL_TEMPLATES", dirname(dirname(__FILE__)) . "/templates/mail-templates/");
+	or define("MAIL_TEMPLATES", dirname(__FILE__) . "/mail-templates/");
 
 // Include paths for files containing secure functions
 $files_secure_functions = array(
@@ -151,10 +147,10 @@ $default_replace = array($websiteName,SITE_ROOT,$emailDate);
 
 // The dirname(__FILE__) . "/..." construct tells PHP to look for the include file in the same directory as this (the config) file
 if (!file_exists($language)) {
-	$language = dirname(dirname(__FILE__)) . "/templates/languages/en.php";
+	$language = dirname(__FILE__) . "/languages/en.php";
 }
 
-if(!isset($language)) $language = dirname(dirname(__FILE__)) . "/templates/languages/en.php";
+if(!isset($language)) $language = dirname(__FILE__) . "/languages/en.php";
 
 function getAbsoluteDocumentPath($localPath){
 	return SITE_ROOT . getRelativeDocumentPath($localPath);

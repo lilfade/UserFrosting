@@ -42,7 +42,7 @@ function getSitePath() {
 
     scriptPath = script.getAttribute('src', -1);
 	
-	var basePath = scriptPath.substr(0, scriptPath.lastIndexOf( '/public/js' )+1 );
+	var basePath = scriptPath.substr(0, scriptPath.lastIndexOf( '/js' )+1 );
 	console.log("base site path is: " + basePath);
 	return basePath;
 }

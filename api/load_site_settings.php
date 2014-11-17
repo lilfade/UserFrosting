@@ -51,10 +51,10 @@ if (!($result = loadSiteSettings())){
 $result['language_options'] = $languages;
 
 if (!file_exists($language)) {
-	$language = "templates/languages/en.php";
+	$language = "models/languages/en.php";
 }
 
-if(!isset($language)) $language = "templates/languages/en.php";
+if(!isset($language)) $language = "models/languages/en.php";
 
 restore_error_handler();
 

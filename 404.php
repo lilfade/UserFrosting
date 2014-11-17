@@ -41,8 +41,6 @@ require_once("models/config.php");
   <body>
     <div class="container">
       <div class="header">
-          <ul class="nav nav-pills navbar pull-right">
-          </ul>
         <h3 class="text-muted">UserFrosting</h3>
       </div>
       <div class="jumbotron">
@@ -64,10 +62,6 @@ require_once("models/config.php");
 
 <script>
 	$(document).ready(function() {
-		alertWidget('display-alerts');
-        // Load navigation bar
-        $(".navbar").load("header-loggedout.php", function() {
-            $(".navbar .navitem-home").addClass('active');
-        });
+		alertWidget('display-alerts');  
 	});
 </script>

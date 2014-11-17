@@ -236,8 +236,7 @@ $pages_entry = "INSERT INTO `".$db_table_prefix."pages` (`id`, `page`, `private`
 (13, 'forms/form_user.php', 1),
 (14, 'forms/form_group.php', 1),
 (15, 'forms/form_confirm_delete.php', 1),
-(16, 'forms/form_action_permits.php', 1),
-(16, 'account/info.php', 1);
+(16, 'forms/form_action_permits.php', 1);
 ";
 
 $group_page_matches_sql = "CREATE TABLE IF NOT EXISTS `".$db_table_prefix."group_page_matches` (
@@ -268,8 +267,7 @@ $group_page_matches_entry = "INSERT INTO `".$db_table_prefix."group_page_matches
 (20, 1, 4),
 (21, 1, 6),
 (22, 1, 13),
-(23, 1, 15),
-(24, 2, 17);
+(23, 1, 15);
 ";
 
 // Group-level permits
@@ -346,8 +344,7 @@ $nav_entry = "INSERT INTO `".$db_table_prefix."nav` (`id`, `menu`, `page`, `name
 (8, 'left-sub', 'account/site_authorization.php', 'Authorization', 8, 'site-pages', 'fa fa-key', 5),
 (9, 'top-main-sub', '#', '#USERNAME#', 1, 'site-settings', 'fa fa-user', 0),
 (10, 'top-main-sub', 'account/account_settings.php', 'Account Settings', 1, '', 'fa fa-gear', 9),
-(11, 'top-main-sub', 'account/logout.php', 'Log Out', 2, '', 'fa fa-power-off', 9),
-(12, 'left-sub', 'account/info.php', 'Site Information', 9, 'site-information', 'fa fa-bug', 5);
+(11, 'top-main-sub', 'account/logout.php', 'Log Out', 2, '', 'fa fa-power-off', 9);
 ";
 
 $nav_group_matches_sql = "CREATE TABLE IF NOT EXISTS `".$db_table_prefix."nav_group_matches` (
@@ -369,8 +366,7 @@ $nav_group_matches_entry = "INSERT INTO `".$db_table_prefix."nav_group_matches` 
 (8, 5, 2),
 (9, 6, 2),
 (10, 7, 2),
-(11, 8, 2),
-(12, 12, 1);
+(11, 8, 2);
 ";
 
 $filelist_sql = "CREATE TABLE IF NOT EXISTS `".$db_table_prefix."filelist` (

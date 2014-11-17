@@ -69,23 +69,7 @@ if(isUserLoggedIn()) {
       <div class="jumbotron">
         <h1>Let's get started!</h1>
         <p class="lead">Registration is fast and simple.</p>
-          <!-- Social sign in if enabled -->
-          <div class="col-md-12">
-              <p>
-                  <button type="button" class="btn btn-info submit" onclick="show('newUser');">Regular Registration</button>
-                  <button type="button" class="btn btn-info submit" onclick="show('socialLogin');">Social Registration</button>
-              </p>
-          </div>
-
-          <div class="col-md-12" id="socialLogin" style="display:none;">
-              <p>
-                  <a href="#" class="zocial icon facebook">Sign in with Facebook</a>
-                  <a href="#" class="zocial icon googleplus">Sign in with Google+</a>
-                  <a href="#" class="zocial icon twitter">Sign in with Twitter</a>
-                  <a href="#" class="zocial icon github">Sign in with Github</a>
-              </p>
-          </div>
-		<form name='newUser' id='newUser' class='form-horizontal' role='form' action='api/create_user.php' method='post' style="display:none;">
+		<form name='newUser' id='newUser' class='form-horizontal' role='form' action='api/create_user.php' method='post'>
 		  <div class="row">
 				<div id='display-alerts' class="col-lg-12">
 		  
@@ -155,21 +139,13 @@ if(isUserLoggedIn()) {
 			</div>
 		  </div>
 		</form>
-	  </div>
+	  </div>	
       <?php echo renderTemplate("footer.html"); ?>
 
     </div> <!-- /container -->
 
 <script>
-    // Shows social buttons or the registration form
-    function show(elementId) {
-        document.getElementById("socialLogin").style.display="none";
-        document.getElementById("newUser").style.display="none";
-
-        document.getElementById(elementId).style.display="block";
-    }
 	$(document).ready(function() {
-
 		// Load navigation bar
 		$(".navbar").load("header-loggedout.php", function() {
             $(".navbar .navitem-register").addClass('active');

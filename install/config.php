@@ -43,14 +43,14 @@ require_once("../models/class_validator.php");
 require_once("../models/password.php");
 require_once("../models/db_functions.php");
 require_once("../models/funcs.php");
-require_once("../templates/languages/en.php");
+require_once("../models/languages/en.php");
 require_once("../models/class.mail.php");
 require_once("../models/class.user.php");
 require_once("../models/error_functions.php");
 require_once("../models/secure_functions.php");
 
 defined("MENU_TEMPLATES")
-    or define("MENU_TEMPLATES", dirname(dirname(__FILE__)) . "templates/menu-templates/");
+    or define("MENU_TEMPLATES", dirname(__FILE__) . "/menu-templates/");
 
 // Construct default site path for inserting into the database
 $hostname = $_SERVER['HTTP_HOST'];

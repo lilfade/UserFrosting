@@ -72,7 +72,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
     </div><!-- /#wrapper -->
     
-    <script src="../public/js/widget-users.js"></script>
+    <script src="../js/widget-users.js"></script>    
     <script>
         $(document).ready(function() {
                               

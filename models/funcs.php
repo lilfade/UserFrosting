@@ -177,7 +177,7 @@ function prettyPrint( $json )
 //Retrieve a list of all .php files in models/languages
 function getLanguageFiles()
 {
-	$directory = "../templates/languages/";
+	$directory = "../models/languages/";
 	$languages = glob($directory . "*.php");
 	//print each file name
 	return $languages;
@@ -214,12 +214,10 @@ function lang($key,$markers = NULL)
 	}
 }
 
-// Non-working function atm
 function getCurrentLanguage($language){
-    $p = $_SERVER['PHP_SELF'];
-    $ex_l = $language;//explode('/', $language);
+    $ex_l = explode('/', $language);
     $ex_l_2 = explode('.', $ex_l[2]);
-    return $p;
+    return $ex_l_2[0];
 }
 
 /*********************************

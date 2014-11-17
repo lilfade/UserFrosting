@@ -33,22 +33,14 @@ THE SOFTWARE.
 include('models/config.php');
 
 if ($can_register){
-    if(isUserLoggedIn()) {
-        echo "<li class='navitem-home'><a href='account/index.php'>Home</a></li>";
-    }else {
-        echo "
-		    <li class='navitem-home'><a href='index.php'>Home</a></li>
-            <li class='navitem-login'><a href='login.php'>Login</a></li>
-            <li class='navitem-register'><a href='register.php'>Register</a></li>";
-    }
+	echo "
+		<li class='navitem-home'><a href='index.php'>Home</a></li>
+        <li class='navitem-login'><a href='login.php'>Login</a></li>
+        <li class='navitem-register'><a href='register.php'>Register</a></li>";
 } else {
-    if(isUserLoggedIn()) {
-        echo "<li class='navitem-home'><a href='account/index.php'>Home</a></li>";
-    }else {
-        echo "
-		    <li class='navitem-home'><a href='index.php'>Home</a></li>
-            <li class='navitem-login'><a href='login.php'>Login</a></li>";
-    }
+	echo "
+		<li class='navitem-home'><a href='index.php'>Home</a></li>
+        <li class='navitem-login'><a href='login.php'>Login</a></li>";
 }
 
 ?>

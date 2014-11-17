@@ -88,16 +88,6 @@ if ($email_login == 1) {
 			  <button type="submit" class="btn btn-success submit" value='Login'>Login</button>
 			</div>
 		  </div>
-            <!-- Social sign in if enabled -->
-            <div class="col-md-12">
-                <p>
-                    <small>Sign in with social account:</small><br />
-                    <a href="#" class="zocial icon facebook">Sign in with Facebook</a>
-                    <a href="#" class="zocial icon googleplus">Sign in with Google+</a>
-                    <a href="#" class="zocial icon twitter">Sign in with Twitter</a>
-                    <a href="#" class="zocial icon github">Sign in with Github</a>
-                </p>
-            </div>
 		  <div class="jumbotron-links">
 		  </div>		  
 		</form>
